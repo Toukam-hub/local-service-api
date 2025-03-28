@@ -19,10 +19,11 @@ public class SendController {
         String subject = "Sécurité Automobile";
         String text = String.format(
                 """                  
-                        Contact: %s,<br />
-                        Ville: %s,<br />
-                        Jour d'installation : %s,<br />
-                        Nature de l'Engin: %s,<br />
+                        Contact: %s,
+                        Ville: %s,
+                        Jour d'installation : %s,
+                        Nature de l'Engin: %s,
+                        
                         Veuillez contacter Monsieur pour plus de détails.
                         """,
                 resourceEmail.contact(),
@@ -32,6 +33,6 @@ public class SendController {
         );
 
         this.emailService.envoyerEmail(subject, text);
-        return ResponseEntity.ok("email bien envoié");
+        return ResponseEntity.ok("{\"message\":\"email bien envoié\"}");
     }
 }
