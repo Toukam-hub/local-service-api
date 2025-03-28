@@ -2,7 +2,7 @@
 FROM openjdk:21-oracle
 
 # Ajoute un label d’auteur à l’image Docker
-LABEL authors="LOCALService"
+LABEL authors="LOCAL_Service"
 
 # Crée un volume persistant pour le dossier /tmp
 VOLUME /tmp
