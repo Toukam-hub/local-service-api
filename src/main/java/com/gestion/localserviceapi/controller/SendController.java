@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping
-@CrossOrigin(origins = "http://localhost:4200", methods = {RequestMethod.POST})
+@CrossOrigin(origins = "https://localservices.koyeb.app", methods = {RequestMethod.POST})
 public class SendController {
 
     private final EmailService emailService;
